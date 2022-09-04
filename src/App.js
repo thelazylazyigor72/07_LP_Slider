@@ -25,7 +25,8 @@ function App() {
   useEffect(() => {
     let slider = setInterval(() => {
       setIndex(index + 1)
-    },10000)
+    },3000)
+    //so when i click next-btn, i clear previous interval or evert btn click will make intervals
     return () => clearInterval(slider)
   },[index])
   //whole thing here w/ adding classes
